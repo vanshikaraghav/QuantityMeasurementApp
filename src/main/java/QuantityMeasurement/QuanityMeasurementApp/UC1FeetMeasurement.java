@@ -1,6 +1,6 @@
 package QuantityMeasurement.QuanityMeasurementApp;
 
-public class UC1FeetMeasurement {
+public class FeetMeasurement {
     // Inner class
     public static class Feet {
         private final double value;
