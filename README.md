@@ -44,7 +44,7 @@ This project is designed using **clean architecture principles (N-Tier)** and de
 
 ### Backend
 
-* Java 21
+* Java jdk
 * Spring Boot
 * Spring Security
 * Spring Data JPA
@@ -86,7 +86,7 @@ src/main/java/com/app/quantitymeasurement/
 
 ### 🔧 Prerequisites
 
-* Java 21+
+* Java jdk
 * Maven
 * MySQL (optional)
 
@@ -232,6 +232,7 @@ Improved overall development efficiency and structure.
 Implemented secure authentication using JWT and Google OAuth.
 Allowed users to log in via external authentication provider.
 Enhanced application security and user management capabilities.
+
 ---
 
 ## 📡 API Endpoints
