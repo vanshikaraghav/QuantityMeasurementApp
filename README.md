@@ -124,7 +124,114 @@ http://localhost:8080
 ```
 http://localhost:8080/h2-console
 ```
+🧪 Use Case (UC) Breakdown
+✅ UC1 – Feet Equality
 
+Implemented the basic functionality to compare two quantities measured in feet.
+This ensured that values with the same unit could be validated for equality.
+It served as the foundation for building more complex unit comparisons.
+
+✅ UC2 – Inch Equality
+
+Extended the equality comparison logic to support inch measurements.
+Allowed accurate comparison between quantities expressed in inches.
+Helped generalize the equality mechanism beyond a single unit type.
+
+✅ UC3 – Generic Length Equality
+
+Introduced a generic approach to compare different length units like feet and inches.
+Handled internal conversion before performing equality checks.
+Improved flexibility by allowing cross-unit comparisons within the same category.
+
+✅ UC4 – Yard Equality
+
+Added support for yard as a new unit in the length category.
+Integrated yard into the existing comparison and conversion logic.
+Ensured seamless equality checks across feet, inches, and yards.
+
+✅ UC5 – Unit Conversion
+
+Implemented logic to convert values between compatible units.
+Used predefined conversion factors to maintain accuracy.
+Enabled operations like feet to inches and vice versa.
+
+✅ UC6 – Addition of Quantities
+
+Developed functionality to add two quantities of the same category.
+Handled automatic conversion to a common unit before performing addition.
+Ensured accurate results irrespective of input units.
+
+✅ UC7 – Target Unit Addition
+
+Enhanced addition operation by allowing results in a specified target unit.
+Converted both operands into the desired unit before computing the result.
+Improved usability by giving control over output format.
+
+✅ UC8 – Standalone Units
+
+Refactored the system to treat units as independent components.
+Improved modularity and reduced tight coupling between units.
+Made the system easier to extend with new measurement types.
+
+✅ UC9 – Weight Measurement
+
+Introduced weight measurement category including kilograms and grams.
+Enabled comparison, conversion, and arithmetic operations for weight units.
+Extended system capability beyond length measurements.
+
+✅ UC10 – Generic Quantity Class
+
+Designed a reusable generic quantity class using interfaces.
+Allowed different unit types to be handled in a unified way.
+Improved code reusability and type safety across categories.
+
+✅ UC11 – Volume Measurement
+
+Added support for volume units and their respective operations.
+Enabled conversion and comparison within the volume category.
+Further expanded the system to handle multiple measurement domains.
+
+✅ UC12 – Subtraction & Division
+
+Implemented subtraction and division operations for quantities.
+Ensured operations are performed only on compatible unit types.
+Handled conversions internally to maintain accuracy.
+
+✅ UC13 – Centralized Logic
+
+Refactored arithmetic operations into a centralized logic layer.
+Reduced code duplication and improved maintainability.
+Followed DRY (Don't Repeat Yourself) principles effectively.
+
+✅ UC14 – Temperature Handling
+
+Introduced temperature measurement with special conversion logic.
+Restricted arithmetic operations where not logically valid.
+Handled edge cases like Celsius to Fahrenheit conversion.
+
+✅ UC15 – N-Tier Architecture
+
+Structured the application into Controller, Service, and Repository layers.
+Ensured proper separation of concerns across the system.
+Improved scalability, readability, and maintainability of the codebase.
+
+✅ UC16 – Database Integration
+
+Integrated database support using Spring Data JPA.
+Enabled persistent storage of measurement data.
+Supported both H2 (development) and MySQL (production).
+
+✅ UC17 – Spring Framework Integration
+
+Leveraged Spring Boot features for dependency injection and configuration.
+Simplified application setup and reduced boilerplate code.
+Improved overall development efficiency and structure.
+
+✅ UC18 – OAuth Authentication
+
+Implemented secure authentication using JWT and Google OAuth.
+Allowed users to log in via external authentication provider.
+Enhanced application security and user management capabilities.
 ---
 
 ## 📡 API Endpoints
